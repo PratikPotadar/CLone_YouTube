@@ -1,0 +1,150 @@
+.header{
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(230, 230, 230);
+    z-index: 100;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.hm-menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 20px;
+}
+.youtube-logo{
+    height: 20px;
+    
+}
+.mid{
+    flex:1;
+    margin-left: 70px;
+    margin-right: 34px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.search-icon{
+    height: 24px;
+}
+.search-bar{
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,.05);
+    outline: none;
+    width: 0;
+}
+.search-bar::placeholder{
+    font-size: 14px;
+}
+.search-button{
+    height: 40px;
+    width: 60px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(181, 181, 181);
+    margin-left: -1px;
+    margin-right: 10px;   
+}
+
+.search-button,
+.voice-button,
+.upiccon,
+.ytapps,
+.notification{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button .toolTip,
+.voice-button .toolTip,
+.upiccon .toolTip,
+.ytapps .toolTip,
+.notification .toolTip{
+    position: absolute;
+    background-color: rgb(167, 167, 167);
+    color: aliceblue;
+    padding: 4px;
+    border-radius: 3px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .toolTip,
+.voice-button:hover .toolTip,
+.upiccon:hover .toolTip,
+.ytapps:hover .toolTip,
+.notification:hover .toolTip{
+    opacity: 1;
+    
+}
+
+.voice-icon{
+    height: 24px;
+}
+.voice-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(247, 247, 247);
+}
+.right{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.upload-icon{
+    height: 24px;
+}
+.yt-icon{
+    height: 24px;
+}
+.notifi{
+    height: 24px;
+}
+.notification{
+    position: relative;
+}
+.noticount{
+    font-size: 10px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    position: absolute;
+    top:-4px;
+    right: -8px;
+    background-color: rgb(173, 0, 0);
+    color: white;
+    border-radius: 50%;
+}
+.user-dp{
+    height: 30px;
+    border-radius: 50%;
+}
